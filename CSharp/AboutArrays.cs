@@ -12,12 +12,13 @@ namespace DotNetKoans.CSharp
         public void CreatingArrays()
         {
             var empty_array = new object[] { };
-            Assert.Equal(typeof(FillMeIn), empty_array.GetType());
+            /* What is the relationship between object and array displayed here? Has the syntax changed from JS? */
+            Assert.Equal(typeof(object[]), empty_array.GetType());
 
             //Note that you have to explicitly check for subclasses
             Assert.True(typeof(Array).IsAssignableFrom(empty_array.GetType()));
 
-            Assert.Equal(FILL_ME_IN, empty_array.Length);
+            Assert.Equal(0, empty_array.Length);
         }
 
         [Koan(2)]
