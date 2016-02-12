@@ -23,8 +23,8 @@ namespace DotNetKoans.CSharp
         public void AssertEquality() 
         {
             var expectedValue = 3;
-            var actualValue = 1 + 1;
-            Assert.True(expectedValue != actualValue);
+            var actualValue = 1 + 2;
+            Assert.True(expectedValue == actualValue);
         }
 
         //Some wasy of asserting equality are better than others
