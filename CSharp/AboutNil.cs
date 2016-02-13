@@ -49,12 +49,12 @@ namespace DotNetKoans.CSharp
         public void AWayNotToCheckThatAnObjectIsNull()
         {
             /*
-            I'm not sure that I understand the concept that this Koan is trying to teach me.
-            Is my solution to this Koan bad practice? If so, why? Why is the solution to the previous Koan better?
+            obj is null and therefor .Equals does not exist. This makes the entire assert invalid.
+            null is a placeholder for any data type, but is representative of the actual data type.
             */
             object obj = null;
-            Assert.True(obj == null);
             //Assert.True(obj.Equals(null));
+            Assert.True(obj == null);
         }
     }
 }
