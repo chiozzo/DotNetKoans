@@ -30,13 +30,13 @@ namespace DotNetKoans.CSharp
             Assert.Equal(new int[] { 42 }, array);
 
             //Are arrays 0-based or 1-based?
-            Assert.Equal(42, array[((int)FILL_ME_IN)]);
+            Assert.Equal(42, array[((int)0)]);
 
             //This is important because...
             Assert.True(array.IsFixedSize);
 
             //...it means we can't do this: array[1] = 13;
-            Assert.Throws(typeof(FillMeIn), delegate() { array[1] = 13; });
+            Assert.Throws(typeof(IndexOutOfRangeException), delegate() { array[1] = 13; });
 
             //This is because the array is fixed at length 1. You could write a function
             //which created a new array bigger than the last, copied the elements over, and
@@ -46,7 +46,7 @@ namespace DotNetKoans.CSharp
             Assert.Equal(array, dynamicArray.ToArray());
 
             dynamicArray.Add(13);
-            Assert.Equal((new int[] { 42, (int)FILL_ME_IN}), dynamicArray.ToArray());
+            Assert.Equal((new int[] { 42, (int)13}), dynamicArray.ToArray());
         }
 
         [Koan(3)]
