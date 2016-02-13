@@ -54,8 +54,8 @@ namespace DotNetKoans.CSharp
         {
             var array = new[] { "peanut", "butter", "and", "jelly" };
 
-            Assert.Equal(FILL_ME_IN, array[0]);
-            Assert.Equal(FILL_ME_IN, array[3]);
+            Assert.Equal("peanut", array[0]);
+            Assert.Equal("jelly", array[3]);
             
             //This doesn't work: Assert.Equal(FILL_ME_IN, array[-1]);
         }
