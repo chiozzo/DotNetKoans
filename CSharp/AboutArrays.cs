@@ -74,11 +74,15 @@ namespace DotNetKoans.CSharp
         {
             var array = new[] { 1, 2 };
             Stack stack = new Stack(array);
+            Console.WriteLine(stack);
             stack.Push("last");
-            Assert.Equal(FILL_ME_IN, stack.ToArray());
+            Assert.Equal(new object[] { (string)"last", (int)2, (int)1 }, stack.ToArray());
             var poppedValue = stack.Pop();
-            Assert.Equal(FILL_ME_IN, poppedValue);
-            Assert.Equal(FILL_ME_IN, stack.ToArray());
+            Assert.Equal((string)"last", poppedValue);
+            Assert.Equal(new object[] { (int)2, (int)1 }, stack.ToArray());
+            /*
+            What is the difference between an array and a stack?
+            */
         }
 
         [Koan(6)]
