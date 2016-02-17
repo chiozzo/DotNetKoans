@@ -73,6 +73,9 @@ namespace DotNetKoans.CSharp
         public void PushingAndPopping()
         {
             var array = new[] { 1, 2 };
+            /*
+            Can an array have multiple types? Only an object array can?
+            */
             Stack stack = new Stack(array);
             Console.WriteLine(stack);
             stack.Push("last");
@@ -81,7 +84,7 @@ namespace DotNetKoans.CSharp
             Assert.Equal((string)"last", poppedValue);
             Assert.Equal(new object[] { (int)2, (int)1 }, stack.ToArray());
             /*
-            What is the difference between an array and a stack?
+            What is the difference between an array and a stack? The method of storing and retrieving the data. FIFO v. LIFO(FILO)
             */
         }
 
