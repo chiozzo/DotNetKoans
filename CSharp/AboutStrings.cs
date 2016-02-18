@@ -81,10 +81,14 @@ broken line";
             //the hardcoded escape sequence. A much better way
             //(We'll handle concatenation and better ways of that in a bit)
             var literalString = "I" + System.Environment.NewLine + "am a" + System.Environment.NewLine + "broken line";
+            var vebatimString = "I\r\nam a\r\nbroken line";
+            // This solution below should work.
+            /*
             var vebatimString = @"I
 am a
 broken line";
-            // Assert.Equal(literalString, vebatimString);
+                */
+            Assert.Equal(literalString, vebatimString);
         }
 
         [Koan(8)]
