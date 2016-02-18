@@ -192,7 +192,10 @@ broken line";
 		public void CurrencyDesignatorsCanBeAdded()
 		{
 			var str = string.Format("{0:n}", 123456);
-			Assert.Equal(FILL_ME_IN, str);
+            /*
+            Isn't this exactly the same as the previous Koan?
+            */
+			Assert.Equal("123,456.00", str);
 		}
 
 		[Koan(18)]
