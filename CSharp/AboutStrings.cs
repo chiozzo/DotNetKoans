@@ -161,8 +161,11 @@ broken line";
 		public void StringsCanBePaddedToTheLeft()
 		{
 			//You can modify the value inserted into the result
+            /*
+            Need better grok of syntax for {0,3:}. If : is referring to spaces, then why does 2 spaces pass the test?
+            */
 			var str = string.Format("{0,3:}", "x");
-			Assert.Equal(FILL_ME_IN, str);
+			Assert.Equal("  x", str);
 		}
 
 		[Koan(15)]
