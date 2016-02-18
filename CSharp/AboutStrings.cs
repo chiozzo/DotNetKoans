@@ -40,8 +40,11 @@ namespace DotNetKoans.CSharp
         {
             //The @ symbol creates a 'verbatim string literal'. 
             //Here's one thing you can do with it:
+            /*
+            Is the double quotes syntax working in tandem with @? Does double quotes just replace the forward slashes from the previous Koan?
+            */
             var str = @"Hello, ""World""";
-            Assert.Equal(FILL_ME_IN, str.Length);
+            Assert.Equal(14, str.Length);
         }
 
         [Koan(5)]
