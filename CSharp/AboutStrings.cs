@@ -145,8 +145,9 @@ broken line";
 		public void YouDoNotNeedConcatenationToInsertVariablesInAString()
 		{
 			var world = "World";
+            // Is the {0} syntax referring to the first argument
 			var str = String.Format("Hello, {0}", world);
-			Assert.Equal(FILL_ME_IN, str);
+			Assert.Equal("Hello, World", str);
 		}
 
 		[Koan(13)]
