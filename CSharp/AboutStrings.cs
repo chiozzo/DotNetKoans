@@ -65,8 +65,11 @@ namespace DotNetKoans.CSharp
             var verbatimString = @"I
 am a
 broken line";
-            Assert.Equal(20, verbatimString.Length);
-            var literalString = FILL_ME_IN;
+            Assert.Equal(18, verbatimString.Length);
+            /*
+            This solution seems to contradict the comment above. WTF?
+            */
+            var literalString = "I\nam a\nbroken line";
             Assert.Equal(literalString, verbatimString);
         }
 
