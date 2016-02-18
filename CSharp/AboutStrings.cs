@@ -171,8 +171,11 @@ broken line";
 		[Koan(15)]
 		public void StringsCanBePaddedToTheRight()
 		{
+            /*
+            Again, why only two spaces?
+            */
 			var str = string.Format("{0,-3:}", "x");
-			Assert.Equal(FILL_ME_IN, str);
+			Assert.Equal("x  ", str);
 		}
 
 		[Koan(16)]
