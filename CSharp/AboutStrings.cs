@@ -219,7 +219,10 @@ broken line";
 		public void BuiltInDateFormaters()
 		{
 			var str = string.Format("{0:t}", DateTime.Parse("12/16/2011 2:35:02 PM"));
-			Assert.Equal(FILL_ME_IN, str);
+            /*
+            Why are the seconds truncated off here? Is there a different format to include them in the string?
+            */
+			Assert.Equal("2:35 PM", str);
 		}
 
 		[Koan(21)]
