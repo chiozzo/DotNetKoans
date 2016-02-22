@@ -261,7 +261,7 @@ broken line";
 			strBuilder.AppendFormat("{0} {1} {2}", "jumped", "over", "the");
 			strBuilder.AppendFormat("{0} {1}.", "lazy", "dog");
 			var str = strBuilder.ToString();
-			Assert.Equal(FILL_ME_IN, str);
+			Assert.Equal("The quick brownjumped over thelazy dog.", str);
 		}
 		
         [Koan(23)]
