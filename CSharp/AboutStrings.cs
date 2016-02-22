@@ -248,7 +248,7 @@ broken line";
 			strBuilder.Append("lazy ");
 			strBuilder.Append("dog.");
             var str = strBuilder.ToString();
-            Assert.Equal(FILL_ME_IN, str);
+            Assert.Equal("The quick brown fox jumped over the lazy dog.", str);
 
             //String.Format and StringBuilder will be more efficent that concatenation. Prefer them.
         }
