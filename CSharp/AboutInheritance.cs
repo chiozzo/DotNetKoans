@@ -101,6 +101,7 @@ namespace DotNetKoans.CSharp
             What happens to the original Dog class on this cast? Is it overwritten?
             */
             Dog dog = chico as Dog;
+            // Why does chico, now as a dog, yip? It should WOOF! since it's now cast as a Dog.
             Assert.Equal("yip", dog.Bark());
 
             var fido = new Dog("Fido");
