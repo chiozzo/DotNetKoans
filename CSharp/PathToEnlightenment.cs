@@ -7,13 +7,13 @@
             get
             {
                 return new string[] {
-				"DotNetKoans.CSharp.AboutAsserts",
-				"DotNetKoans.CSharp.AboutNil",
-				"DotNetKoans.CSharp.AboutArrays",
-				"DotNetKoans.CSharp.AboutArrayAssignment",
-				"DotNetKoans.CSharp.AboutStrings",
-				"DotNetKoans.CSharp.AboutInheritance",
-				"DotNetKoans.CSharp.AboutMethods",
+				"DotNetKoans.CSharp.AboutAsserts", // DONE
+				"DotNetKoans.CSharp.AboutNil", // DONE
+				"DotNetKoans.CSharp.AboutArrays", // DONE
+				"DotNetKoans.CSharp.AboutArrayAssignment", // DONE
+				"DotNetKoans.CSharp.AboutStrings", // DONE
+				"DotNetKoans.CSharp.AboutInheritance", // DONE
+				"DotNetKoans.CSharp.AboutMethods", // IN PROGRESS
 				"DotNetKoans.CSharp.AboutControlStatements",
 				"DotNetKoans.CSharp.AboutGenericContainers",
 				"DotNetKoans.CSharp.AboutDelegates",
