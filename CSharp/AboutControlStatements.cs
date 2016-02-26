@@ -161,10 +161,10 @@ namespace DotNetKoans.CSharp
             while(i < 10)
             {
                 i += 1;
-                if ((i % 2) == 0) { continue; }
+                if ((i % 2) == 0) { continue; } //effectively means skip to next loop iteration. NOT continue this loop.
                 result.Add(i);
             }
-            Assert.Equal(FILL_ME_IN, result);
+            Assert.Equal(new List<int> { 1, 3, 5, 7, 9 }, result);
         }
 
         [Koan(13)]
