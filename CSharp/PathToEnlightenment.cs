@@ -13,8 +13,8 @@
 				"DotNetKoans.CSharp.AboutArrayAssignment", // DONE
 				"DotNetKoans.CSharp.AboutStrings", // DONE
 				"DotNetKoans.CSharp.AboutInheritance", // DONE
-				"DotNetKoans.CSharp.AboutMethods", // IN PROGRESS
-				"DotNetKoans.CSharp.AboutControlStatements",
+				"DotNetKoans.CSharp.AboutMethods", // DONE
+				"DotNetKoans.CSharp.AboutControlStatements", // IN PROGRESS
 				"DotNetKoans.CSharp.AboutGenericContainers",
 				"DotNetKoans.CSharp.AboutDelegates",
 				"DotNetKoans.CSharp.AboutLambdas"
