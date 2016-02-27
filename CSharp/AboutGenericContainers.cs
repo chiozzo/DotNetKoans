@@ -146,7 +146,7 @@ namespace DotNetKoans.CSharp
 		{
 			List<int> list = new List<int> { 2, 1, 2, 3 };
 			list.Remove(2);
-			Assert.Equal(FILL_ME_IN, list.ToArray());
+			Assert.Equal(new int[] { 1, 2, 3 }, list.ToArray());
 		}
 		[Koan(15)]
 		public void StackPushPop()
