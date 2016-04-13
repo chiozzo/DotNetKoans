@@ -16,8 +16,8 @@
 				"DotNetKoans.CSharp.AboutMethods", // DONE
 				"DotNetKoans.CSharp.AboutControlStatements", // DONE
 				"DotNetKoans.CSharp.AboutGenericContainers", // DONE
-				"DotNetKoans.CSharp.AboutDelegates", // IN PROGRESS
-				"DotNetKoans.CSharp.AboutLambdas"
+				"DotNetKoans.CSharp.AboutDelegates", // DONE
+				"DotNetKoans.CSharp.AboutLambdas" // DONE
                 };
             }
         }
